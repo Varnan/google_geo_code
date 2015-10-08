@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="ico/favicon.png">
+        <title>Order Details | On-demand delivery Service</title>
+
+        <!-- CSS Plugins -->
+        <link href="/static/css/plugins/animate.css" rel="stylesheet">
+        <link href="/static/css/plugins/owl.carousel.css" rel="stylesheet">
+        <link href="/static/css/plugins/lightbox.css" rel="stylesheet">
+        <link href="fonts/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+        <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+        <!-- JS Global -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="/static/js/bootstrap/bootstrap.min.js"></script>
+        <script src="/static/js/angular.min.js"></script>
+
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var menu = $('#navbar');
+
+                $(window).scroll(function () {
+                    var y = $(this).scrollTop();
+                    var z = $('#about').offset().top;
+
+                    if (y >= z) {
+                        menu.removeClass('navbar-default').addClass('navbar-inverse');
+                    }
+                    else{
+                        menu.removeClass('navbar-inverse').addClass('navbar-default');
+                    }
+                });
+            });
+        </script>
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Karla:400,700' rel='stylesheet' type='text/css'>
+
+        <!-- CSS Custom -->
+        <link href="/static/css/styles.css" rel="stylesheet">
+        <style type="text/css">
+          .services {
+              padding: 50px 0;
+              background: #202024 url(https://d1a3f4spazzrp4.cloudfront.net/web-fresh/pattern-grid-dark@1x.gif)repeat left top;
+              font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+          }
+
+          .service-item {
+              margin-bottom: 30px;
+          }
+        </style>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="71" style=" background-color: #DA423F; ">
+        <div class="wrapper">
+            
+
+            <div class="hero text-center" id="home" style="height: 667px; padding: 140px 0 100px;">
+                <div class="row">
+                    <div class="col-sm-5 col-sm-offset-6 col-xs-12">
+                    <h5 class="heading hero__heading animated fadeInUp">Order Details</h5>
+
+
+                       <form role="form"  class="contact__form" >
+
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <input type="text" name="addr1" class="form-control" id="name" placeholder="Address 1" value="{{order.address1}}" disabled>
+                                        <span class="help-block"></span>
+                                    </div>
+                                    <div class="form-group">
+                                       
+                                        <input type="text" name="addr2" class="form-control" id="addr2" placeholder="Address 2" value="{{order.address2}}" disabled>
+                                        <span class="help-block"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                       
+                                        <input type="text" name="city" class="form-control" id="city" placeholder="City" value="{{order.city}}" disabled>
+                                        <span class="help-block"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                       
+                                        <input type="text" name="mobile" class="form-control" id="mobile" placeholder="Mobile Number" value="{{order.mobile}}" disabled>
+                                        <span class="help-block"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        
+                                        <input type="text" name="amount" class="form-control" id="amount" placeholder="Amount" value="{{order.amount}}" disabled >
+                                        <span class="help-block"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        
+                                        <input type="text" name="long" class="form-control" id="long" placeholder="Latitude" value="{{order.latitude}}" disabled >
+                                        <span class="help-block"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        
+                                        <input type="text" name="lat" class="form-control" id="lat" placeholder="Longitude" value="{{order.longitude}}" disabled>
+                                        <span class="help-block"></span>
+                                    </div>
+
+                                    <div class="form-group">
+                                        
+                                        <input type="text" name="order_time" class="form-control" id="order_time" placeholder="order_time" value="{{order.order_time}}" disabled>
+                                        <span class="help-block"></span>
+                                    </div>
+
+                                    
+                                    
+                                    <div class="form-group text-center">
+                                        <a href="\" class="btn btn-primary" > Go Home </a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                    </div>
+                </div>
+            </div>
+     
+            <div class="container" >
+                <div class="row">
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        <script src="/static/js/plugins/smoothscroll.js"></script>
+        <script src="/static/js/plugins/wow.min.js"></script>
+        <script src="/static/js/plugins/owl.carousel.min.js"></script>
+        <script src="/static/js/plugins/jquery.peity.min.js"></script>
+        <script src="/static/js/plugins/lightbox.min.js"></script>
+        <script src="/static/js/plugins/contact.js"></script>
+        <script src="/static/js/plugins/jquery.validate.min.js"></script>
+        <script src="/static/js/custom.js"></script>
+  </body>
+</html>
